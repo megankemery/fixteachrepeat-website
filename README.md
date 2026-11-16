@@ -21,18 +21,28 @@ I am using this project to develop practical experience with website configurati
 
 ## Technologies & Tools
 
-- **Cloudflare:** Website-related services and configuration.
-- **ChatGPT:** AI-assisted planning, development, and troubleshooting.
-- **GitHub:** Project documentation and version history.
+- **Cloudflare Workers:** Website deployment and management.
+- **Cloudflare:** Custom domain configuration and website services.
+- **ChatGPT:** AI-assisted website code generation, revisions, and troubleshooting.
+- **Notepad:** Editing and saving website code.
+- **USB Storage:** Local storage and transfer of website files.
+- **GitHub:** Project documentation and version tracking.
 
-*Specific Cloudflare services, programming languages, and deployment methods will be documented as they are confirmed.*
+## Current Development Workflow
 
-## Development & Troubleshooting Log
+1. Develop and revise website code with assistance from ChatGPT.
+2. Copy code into Notepad and save the website files to USB storage.
+3. Upload the updated files manually through the Cloudflare dashboard.
+4. Deploy changes to the Cloudflare Worker.
+5. Review the live website and make additional changes as needed.
 
-| Issue or Task | Investigation | Resolution |
-|---|---|---|
-| Initial website configuration | In progress | To be documented |
-| Website functionality and testing | In progress | To be documented |
+## Deployment Management
+
+The website is deployed using Cloudflare Workers with a custom domain.
+
+Cloudflare maintains a history of manually deployed versions, allowing previous deployments to be identified.
+
+**Future Improvement:** Explore integrating GitHub into the development workflow to improve source-code version control and potentially automate deployments.
 
 ## Skills Being Developed
 
