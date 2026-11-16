@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Fix.Teach.Repeat.</title>
+
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #fbf3f5;
+            color: #9b5f70;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+
+        header {
+            text-align: center;
+            padding: 55px 20px 25px;
+        }
+
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+
+        header h1 a {
+            color: #9b5f70;
+            text-decoration: none;
+        }
+
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+
+        nav {
+            text-align: center;
+            margin: 25px 0 45px;
+        }
+
+
+        nav a {
+            color: #9b5f70;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 15px;
+        }
+
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 0 25px 60px;
+        }
+
+
+        .back {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+
+        .back a {
+            color: #9b5f70;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+
+        .back a:hover {
+            text-decoration: underline;
+        }
+
+
+        .intro {
+            text-align: center;
+            max-width: 720px;
+            margin: auto;
+        }
+
+
+        .intro-label {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+
+        .intro h2 {
+            font-size: 38px;
+            font-weight: normal;
+            margin: 0 0 18px;
+        }
+
+
+        .intro p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #7f5361;
+        }
+
+
+        .divider {
+            width: 80px;
+            height: 1px;
+            background: #e2b8c3;
+            margin: 55px auto;
+        }
+
+
+        section {
+            margin-bottom: 65px;
+        }
+
+
+        section h2 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+
+        .about-box {
+            background: white;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(155, 95, 112, 0.08);
+        }
+
+
+        .about-box p {
+            line-height: 1.8;
+            color: #7f5361;
+        }
+
+
+        .photo-area {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+
+        .about-photo {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            border: 4px solid white;
+            box-shadow: 0 6px 20px rgba(155, 95, 112, 0.14);
+        }
+
+
+        .photo-caption {
+            margin: 0;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #b57b8a;
+        }
+
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(155, 95, 112, 0.08);
+        }
+
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 21px;
+            font-weight: normal;
+        }
+
+
+        .card p {
+            line-height: 1.6;
+            color: #7f5361;
+        }
+
+
+        .portfolio {
+            background: white;
+            padding: 40px;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(155, 95, 112, 0.08);
+        }
+
+
+        .portfolio p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            line-height: 1.7;
+            color: #7f5361;
+        }
+
+
+        .portfolio a {
+            color: #9b5f70;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+        .portfolio a:hover {
+            text-decoration: underline;
+        }
+
+
+        footer {
+            text-align: center;
+            border-top: 1px solid #e2b8c3;
+            padding: 35px 20px;
+            color: #9b5f70;
+        }
+
+
+        footer strong {
+            display: block;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 6px;
+        }
+
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+
+        @media (max-width: 800px) {
+
+            header h1 {
+                font-size: 36px;
+            }
+
+
+            .intro h2 {
+                font-size: 30px;
+            }
+
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+
+            .about-photo {
+                width: 190px;
+                height: 190px;
+            }
+
+
+            nav a {
+                display: inline-block;
+                margin: 7px 8px;
+            }
+
+        }
+
+    </style>
+
+
+
+<!-- Pinterest Tag -->
+<script>
+!function(e){if(!window.pintrk){window.pintrk=function(){
+window.pintrk.queue.push(Array.prototype.slice.call(arguments))};
+var n=window.pintrk;n.queue=[],n.version="3.0";
+var t=document.createElement("script");t.async=!0;t.src=e;
+var r=document.getElementsByTagName("script")[0];
+r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+
+pintrk('load', '2613752332182');
+pintrk('page');
+</script>
+
+<noscript>
+<img
+    height="1"
+    width="1"
+    style="display:none;"
+    alt=""
+    src="https://ct.pinterest.com/v3/?event=init&tid=2613752332182&noscript=1"
+/>
+</noscript>
+<!-- End Pinterest Tag -->
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>
+        <a href="index.html">Fix.Teach.Repeat.</a>
+    </h1>
+
+    <p>
+        Life, figured out one thing at a time.
+    </p>
+
+</header>
+
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="tech/tech.html">Tech</a>
+
+    <a href="beauty/beauty.html">Beauty + Style</a>
+
+    <a href="diy/diy.html">DIY + Finds</a>
+
+    <a href="work-with-me.html">Work With Me</a>
+
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+
+<main>
+
+
+    <div class="back">
+
+        <a href="index.html">
+            ← Back to Home
+        </a>
+
+    </div>
+
+
+
+    <!-- INTRO -->
+
+
+    <div class="intro">
+
+        <div class="intro-label">
+            About
+        </div>
+
+
+        <h2>
+            Hi, I'm Megan.
+        </h2>
+
+
+        <p>
+            Tech girl, former teacher, creator, problem solver,
+            and lifelong learner.
+        </p>
+
+    </div>
+
+
+
+    <div class="divider"></div>
+
+
+
+    <!-- PHOTO + ABOUT -->
+
+
+    <section>
+
+
+        <div class="photo-area">
+
+            <img
+                src="images/aboutmephoto.jpeg"
+                alt="Megan"
+                class="about-photo"
+            >
+
+
+            <p class="photo-caption">
+                Tech • Creator • Lifelong Learner
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <h2>
+                So, what is Fix.Teach.Repeat.?
+            </h2>
+
+
+            <p>
+                Fix.Teach.Repeat. is my little corner of the internet
+                where all the things I'm figuring out can live in one place.
+            </p>
+
+
+            <p>
+                Technology is a big part of what I do, but it isn't
+                the only thing I'm interested in. I also love beauty,
+                style, DIY projects, useful products, content creation,
+                and finding better ways to do everyday things.
+            </p>
+
+
+            <p>
+                Basically, if I'm learning it, testing it, fixing it,
+                making it, or wondering whether it's actually worth
+                the money — there's probably a story behind it.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WHAT I DO -->
+
+
+    <section>
+
+        <h2>
+            What I Do
+        </h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>
+                    Tech
+                </h3>
+
+
+                <p>
+                    I work in technology and spend a lot of time
+                    solving problems, learning new tools, and
+                    figuring out how things work.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Creator
+                </h3>
+
+
+                <p>
+                    I'm building content around products,
+                    lifestyle, beauty, style, technology,
+                    and the things I'm genuinely interested in.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Lifestyle
+                </h3>
+
+
+                <p>
+                    I'm interested in the everyday stuff too —
+                    routines, finds, projects, style, beauty,
+                    and making life a little easier.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WHY THE NAME -->
+
+
+    <section>
+
+        <div class="about-box">
+
+            <h2>
+                Why the Name?
+            </h2>
+
+
+            <p>
+                Fix it.
+            </p>
+
+
+            <p>
+                Teach it.
+            </p>
+
+
+            <p>
+                Repeat.
+            </p>
+
+
+            <p>
+                It's basically the cycle of my life.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CURRENTLY WORKING ON -->
+
+
+    <section>
+
+        <h2>
+            Currently Working On
+        </h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>
+                    Growing as a Creator
+                </h3>
+
+
+                <p>
+                    Building my content portfolio and
+                    learning more about UGC and brand
+                    collaborations.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Learning New Tech
+                </h3>
+
+
+                <p>
+                    Expanding my technical skills and
+                    continuing to build projects from scratch.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Building This Site
+                </h3>
+
+
+                <p>
+                    Learning web development one tiny
+                    step at a time.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CREATOR PORTFOLIO -->
+
+
+    <section>
+
+        <div class="portfolio">
+
+            <h2>
+                UGC + Creator Portfolio
+            </h2>
+
+
+            <p>
+                Want to see the content I'm creating?
+                I'm building a portfolio featuring UGC,
+                product photography, short-form video,
+                and lifestyle content.
+            </p>
+
+
+            <p>
+                <a href="work-with-me.html">
+                    View My Creator Work →
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <strong>
+        Fix.Teach.Repeat.
+    </strong>
+
+
+    <p>
+        Life, figured out one thing at a time.
+    </p>
+
+
+    <p>
+        Tech • Beauty + Style • DIY + Finds • UGC
+    </p>
+
+</footer>
+
+
+</body>
+</html>

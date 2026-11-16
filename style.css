@@ -1,0 +1,179 @@
+/* =========================
+   Fix.Teach.Repeat.
+   Main Styles
+   ========================= */
+
+body {
+    margin: 0;
+    background-color: #fbf4f6;
+    color: #9d6275;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+header {
+    text-align: center;
+    padding: 38px 20px 18px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 52px;
+}
+
+header h1 a {
+    color: #a15f73;
+    text-decoration: none;
+}
+
+header p {
+    margin: 18px 0 16px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   Navigation
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+nav a {
+    color: #a15f73;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+}
+
+nav a:hover {
+    opacity: 0.65;
+    border-bottom-color: #a15f73;
+}
+
+
+/* =========================
+   Divider
+   ========================= */
+
+header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #dcbac5;
+    margin-top: 18px;
+}
+
+
+/* =========================
+   Intro
+   ========================= */
+
+.intro {
+    text-align: center;
+    padding: 38px 20px 0;
+}
+
+.intro h2 {
+    margin: 0 0 18px;
+    color: #9d6275;
+    font-size: 24px;
+}
+
+.intro p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* =========================
+   Category Cards
+   ========================= */
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 825px;
+    margin: 40px auto;
+}
+
+.card {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 32px 28px;
+    min-height: 110px;
+    box-shadow: 0 8px 18px rgba(157, 98, 117, 0.08);
+    text-decoration: none;
+    color: #9d6275;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(157, 98, 117, 0.14);
+}
+
+.card h3 {
+    margin: 0 0 18px;
+    color: #a15f73;
+    font-size: 23px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   About Me
+   ========================= */
+
+.about {
+    text-align: center;
+    max-width: 700px;
+    margin: 48px auto 0;
+    padding: 0 20px;
+}
+
+.about h2 {
+    margin: 0 0 20px;
+    color: #9d6275;
+    font-size: 23px;
+}
+
+.about p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 28px 20px 35px;
+    border-top: 1px solid #dcbac5;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}

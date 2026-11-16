@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Beauty + Self Care | Fix.Teach.Repeat.</title>
+
+  <meta
+    name="description"
+    content="Shop beauty and self-care finds from Fix.Teach.Repeat., including products I've tried, loved, and would actually recommend."
+  >
+
+
+  <!-- SOCIAL SHARE PREVIEW -->
+
+  <meta
+    property="og:title"
+    content="Beauty + Self Care | Fix.Teach.Repeat."
+  >
+
+  <meta
+    property="og:description"
+    content="Beauty and self-care products I've actually tried, loved, and would recommend."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://fixteachrepeat.com/beauty/beauty-self-care.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://fixteachrepeat.com/images/beauty-photo.jpeg"
+  >
+
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Beauty + Self Care | Fix.Teach.Repeat."
+  >
+
+  <meta
+    name="twitter:description"
+    content="Beauty and self-care products I've actually tried, loved, and would recommend."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://fixteachrepeat.com/images/beauty-photo.jpeg"
+  >
+
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="../favicon.png"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+      background: #fbf3f5;
+      color: #7f304b;
+      font-family: "Playfair Display", serif;
+    }
+
+
+    header {
+      border-bottom: 1px solid #efd7dd;
+      background: rgba(255,255,255,.55);
+    }
+
+
+    .header-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+
+    .brand {
+      text-decoration: none;
+      color: #8f4f64;
+    }
+
+
+    .brand-title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+
+    .brand-tagline {
+      margin-top: 5px;
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #b77a89;
+    }
+
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 22px;
+    }
+
+
+    nav a {
+      color: #8f4f64;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 78px 0 90px;
+    }
+
+
+    .eyebrow {
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #b77a89;
+    }
+
+
+    h1 {
+      margin-top: 8px;
+      text-align: center;
+      font-family: "Allura", cursive;
+      font-size: clamp(58px, 8vw, 92px);
+      font-weight: 400;
+      line-height: .95;
+      color: #9b5f70;
+    }
+
+
+    .intro {
+      max-width: 690px;
+      margin: 18px auto 20px;
+      text-align: center;
+      color: #7c5b66;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+
+    .affiliate-disclosure {
+      max-width: 690px;
+      margin: 0 auto 48px;
+      text-align: center;
+      color: #a17d88;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+
+    .product-card {
+      background: rgba(255,255,255,.72);
+      border: 1px solid #efd7dd;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(127,48,75,.07);
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .photo-link {
+      display: block;
+      overflow: hidden;
+      text-decoration: none;
+      background: #fff;
+    }
+
+
+    .photo-link img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+
+    .lash-photo {
+      object-fit: contain !important;
+      background: #fff;
+    }
+
+
+    .product-copy {
+      padding: 20px 18px 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+
+    .product-label {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #b77a89;
+      margin-bottom: 12px;
+    }
+
+
+    .product-copy h2 {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #8c4d62;
+    }
+
+
+    .product-copy p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #7c5b66;
+      margin-bottom: 18px;
+    }
+
+
+    .shop-button {
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: auto;
+      background: #8f4f64;
+      color: #fff;
+      text-decoration: none;
+      padding: 11px 16px;
+      border-radius: 999px;
+      font-size: 10px;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+    }
+
+
+    .shop-button:hover {
+      background: #7f304b;
+    }
+
+
+    /* SHOPMY */
+
+    .shop-more {
+      max-width: 760px;
+      margin: 55px auto 0;
+      padding: 34px 28px;
+      text-align: center;
+      background: #f5e2e7;
+      border: 1px solid #efd7dd;
+      border-radius: 18px;
+    }
+
+
+    .shop-more-label {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #b77a89;
+      margin-bottom: 8px;
+    }
+
+
+    .shop-more h2 {
+      font-size: 30px;
+      color: #8c4d62;
+      margin: 0 0 12px;
+    }
+
+
+    .shop-more p {
+      max-width: 570px;
+      margin: 0 auto;
+      color: #7c5b66;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+
+    .shopmy-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 13px 20px;
+      background: #8f4f64;
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+
+
+    .shopmy-button:hover {
+      background: #7f304b;
+    }
+
+
+    .back-link {
+      display: inline-block;
+      margin-top: 60px;
+      color: #8f4f64;
+      text-decoration: none;
+      border-bottom: 1px solid #b77a89;
+      padding-bottom: 3px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+
+    footer {
+      border-top: 1px solid #e2b8c3;
+      padding: 32px 20px;
+      text-align: center;
+      color: #9b5f70;
+    }
+
+
+    .footer-logo {
+      font-size: 20px;
+    }
+
+
+    .footer-tagline {
+      margin-top: 6px;
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #b77a89;
+    }
+
+
+
+    @media (max-width: 760px) {
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+
+      nav {
+        justify-content: flex-start;
+        gap: 14px 18px;
+      }
+
+
+      main {
+        padding-top: 52px;
+      }
+
+
+      .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+
+      .intro {
+        margin-bottom: 14px;
+      }
+
+
+      .affiliate-disclosure {
+        margin-bottom: 34px;
+      }
+
+
+      .shop-more {
+        margin-top: 40px;
+        padding: 28px 20px;
+      }
+
+
+      .shop-more h2 {
+        font-size: 26px;
+      }
+
+    }
+
+
+
+    @media (max-width: 520px) {
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .product-copy h2 {
+        font-size: 23px;
+      }
+
+
+      .shop-more {
+        margin-top: 32px;
+      }
+
+
+      .shop-more h2 {
+        font-size: 24px;
+      }
+
+    }
+
+  </style>
+
+
+
+<!-- Pinterest Tag -->
+<script>
+!function(e){if(!window.pintrk){window.pintrk=function(){
+window.pintrk.queue.push(Array.prototype.slice.call(arguments))};
+var n=window.pintrk;n.queue=[],n.version="3.0";
+var t=document.createElement("script");t.async=!0;t.src=e;
+var r=document.getElementsByTagName("script")[0];
+r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+
+pintrk('load', '2613752332182');
+pintrk('page');
+</script>
+
+<noscript>
+<img
+    height="1"
+    width="1"
+    style="display:none;"
+    alt=""
+    src="https://ct.pinterest.com/v3/?event=init&tid=2613752332182&noscript=1"
+/>
+</noscript>
+<!-- End Pinterest Tag -->
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="header-inner">
+
+    <a
+      href="../index.html"
+      class="brand"
+    >
+
+      <div class="brand-title">
+        Fix.Teach.Repeat.
+      </div>
+
+      <div class="brand-tagline">
+        Life, figured out one thing at a time.
+      </div>
+
+    </a>
+
+
+    <nav>
+
+      <a href="../index.html">
+        Home
+      </a>
+
+      <a href="../tech/tech.html">
+        Tech
+      </a>
+
+      <a href="beauty.html">
+        Beauty + Style
+      </a>
+
+      <a href="../diy/diy.html">
+        DIY + Finds
+      </a>
+
+      <a href="../work-with-me.html">
+        Work With Me
+      </a>
+
+      <a href="../contact.html">
+        Contact
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<main>
+
+
+  <div class="eyebrow">
+    Shop My Finds
+  </div>
+
+
+  <h1>
+    Beauty + Self Care
+  </h1>
+
+
+  <p class="intro">
+
+    Things I’ve tried, loved, and would actually recommend.
+    Click the photo or the shop button to see the product.
+
+  </p>
+
+
+  <p class="affiliate-disclosure">
+
+    Some links on this page are affiliate links.
+    I may earn a commission at no extra cost to you.
+
+  </p>
+
+
+
+  <section class="product-grid">
+
+
+    <!-- LASH LIFT -->
+
+    <article class="product-card">
+
+      <a
+        class="photo-link"
+        href="https://on.ltk.com/+-XMyf6uIF3w1QgeGoUFq0A"
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        aria-label="Shop the lash lift kit through LTK"
+      >
+
+        <img
+          src="../images/lash-lift-before-after.png"
+          alt="Before and after results from an at-home lash lift kit"
+          class="lash-photo"
+        >
+
+      </a>
+
+
+      <div class="product-copy">
+
+        <div class="product-label">
+          Lashes
+        </div>
+
+        <h2>
+          At-Home Lash Lift Kit
+        </h2>
+
+        <p>
+          The kit I used for this before-and-after result.
+          An easy little beauty-maintenance upgrade I actually loved.
+        </p>
+
+        <a
+          class="shop-button"
+          href="https://on.ltk.com/+-XMyf6uIF3w1QgeGoUFq0A"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+        >
+          Shop the Kit →
+        </a>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- BLOWOUT TOOL -->
+
+    <article class="product-card">
+
+      <a
+        class="photo-link"
+        href="https://on.ltk.com/+v9mVaoK5JemdHqbusAiCHA"
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        aria-label="Shop Megan's at-home blowout tool through LTK"
+      >
+
+        <img
+          src="../images/blowout-tool.jpeg"
+          alt="Megan using her at-home blowout styling tool"
+        >
+
+      </a>
+
+
+      <div class="product-copy">
+
+        <div class="product-label">
+          Hair
+        </div>
+
+        <h2>
+          My At-Home Blowout Tool
+        </h2>
+
+        <p>
+          The styling tool I reach for when I want
+          that soft, bouncy blowout look without
+          spending forever on my hair.
+        </p>
+
+        <a
+          class="shop-button"
+          href="https://on.ltk.com/+v9mVaoK5JemdHqbusAiCHA"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+        >
+          Shop the Tool →
+        </a>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- SELF TANNER -->
+
+    <article class="product-card">
+
+      <a
+        class="photo-link"
+        href="https://on.ltk.com/+WN_AO7Ltn2BLc_HMPyu4DA"
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        aria-label="Shop Bondi Sands Ultra Dark Self Tanner through LTK"
+      >
+
+        <img
+          src="../images/self-tanner.png"
+          alt="Bondi Sands Aero Ultra Dark self tanning foam"
+        >
+
+      </a>
+
+
+      <div class="product-copy">
+
+        <div class="product-label">
+          Self Care
+        </div>
+
+        <h2>
+          Bondi Sands Ultra Dark Self Tanner
+        </h2>
+
+        <p>
+          My go-to when I want a deeper, even tan
+          at home without committing to an actual
+          spray tan.
+        </p>
+
+        <a
+          class="shop-button"
+          href="https://on.ltk.com/+WN_AO7Ltn2BLc_HMPyu4DA"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+        >
+          Shop the Tanner →
+        </a>
+
+      </div>
+
+    </article>
+
+
+  </section>
+
+
+
+  <!-- SHOPMY -->
+
+  <section class="shop-more">
+
+    <div class="shop-more-label">
+      More Finds
+    </div>
+
+    <h2>
+      More Beauty + Self-Care Favorites
+    </h2>
+
+    <p>
+      Looking for more of the beauty, hair, self-care,
+      and everyday products I’m using?
+      You can browse my latest finds on ShopMy too.
+    </p>
+
+    <a
+      href="https://shopmy.us/shop/fixteachrepeat?tab=latest"
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      class="shopmy-button"
+    >
+      Shop More on ShopMy →
+    </a>
+
+  </section>
+
+
+
+  <a
+    href="beauty.html"
+    class="back-link"
+  >
+    ← Back to Beauty + Style
+  </a>
+
+
+</main>
+
+
+
+<footer>
+
+  <div class="footer-logo">
+    Fix.Teach.Repeat.
+  </div>
+
+  <div class="footer-tagline">
+    Life, figured out one thing at a time.
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>
