@@ -12,6 +12,13 @@ I use this project to gain practical experience with cloud hosting, web technolo
 
 The website is developed using AI-assisted coding workflows, with hands-on involvement in implementation, configuration, testing, and troubleshooting.
 
+## Website Preview
+
+![fix.teach.repeat Homepage](images/website-homepage.png)
+
+**Live Website:** https://fixteachrepeat.com
+
+
 ## Technologies & Tools
 
 | Technology | Application |
