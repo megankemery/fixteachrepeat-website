@@ -388,7 +388,18 @@ nav a.active {
 
     overflow: hidden;
 
-    background: #d6a094;
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d8aaa5,
+            #a65f64
+        );
 }
 
 
@@ -399,13 +410,9 @@ nav a.active {
 
     display: block;
 
-    object-fit: cover;
+    object-fit: contain;
 
-    /*
-       Keeps Megan's face centered in the
-       relatively wide desktop hero crop.
-    */
-    object-position: center 32%;
+    object-position: center;
 }
 
 
@@ -419,8 +426,8 @@ nav a.active {
     background:
         linear-gradient(
             90deg,
-            rgba(246,233,231,.15),
-            transparent 28%
+            rgba(246,233,231,.08),
+            transparent 24%
         );
 
     pointer-events: none;
@@ -1463,13 +1470,7 @@ footer p {
 
 
     .hero-visual {
-        height: 440px;
-    }
-
-
-    .hero-visual img {
-        object-position:
-            center 27%;
+        height: 500px;
     }
 
 
@@ -1581,18 +1582,7 @@ footer p {
 
 
     .hero-visual {
-        height: 365px;
-    }
-
-
-    .hero-visual img {
-        /*
-           Portrait-friendly mobile crop.
-           Keeps face + hair while showing
-           enough of the burgundy sweatshirt.
-        */
-        object-position:
-            center 25%;
+        height: 430px;
     }
 
 
