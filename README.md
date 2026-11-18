@@ -18,6 +18,23 @@ The website is developed using AI-assisted coding workflows, with hands-on invol
 
 **Live Website:** https://fixteachrepeat.com
 
+## Technical Architecture
+
+```mermaid
+flowchart TD
+    A["HTML, CSS & Website Files"]
+    B["GitHub Repository"]
+    C["Cloudflare Workers"]
+    D["fixteachrepeat.com"]
+
+    A -->|"Commit changes"| B
+    B -->|"Connected build"| C
+    C -->|"Website hosting"| D
+```
+
+**Deployment workflow:** Website files are maintained in GitHub. Changes committed to the production branch trigger Cloudflare builds. Successful deployments are verified on the live website.
+
+
 
 ## Technologies & Tools
 
