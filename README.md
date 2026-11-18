@@ -1,70 +1,101 @@
-# Personal Website Development & Cloudflare Configuration
+# Personal Website Development & Cloudflare Deployment
 
-**Project:** fix.teach.repeat  
-**Website:** https://fixteachrepeat.com  
-**Status:** In Development  
+**Live Website:** https://fixteachrepeat.com  
+**Project Status:** Active Development & Maintenance  
 **Project Type:** Independent Technical Portfolio Project
 
 ## Project Overview
 
-This project documents the development and management of my personal website using Cloudflare and ChatGPT-assisted workflows.
+This project documents the development, deployment, and ongoing maintenance of my personal website, fix.teach.repeat.
 
-I am using this project to develop practical experience with website configuration, troubleshooting, technical documentation, and managing an independent web project.
+I use this project to gain practical experience with cloud hosting, web technologies, GitHub version control, deployment workflows, troubleshooting, and technical documentation.
 
-## Project Objectives
-
-- Build and maintain a functional, user-friendly website.
-- Develop a consistent visual identity and intuitive navigation.
-- Learn about website hosting, DNS, and deployment workflows.
-- Investigate and resolve technical issues as they arise.
-- Document technical decisions, changes, and lessons learned.
+The website is developed using AI-assisted coding workflows, with hands-on involvement in implementation, configuration, testing, and troubleshooting.
 
 ## Technologies & Tools
 
-- **Cloudflare Workers:** Website deployment and management.
-- **Cloudflare:** Custom domain configuration and website services.
-- **ChatGPT:** AI-assisted website code generation, revisions, and troubleshooting.
-- **Notepad:** Editing and saving website code.
-- **USB Storage:** Local storage and transfer of website files.
-- **GitHub:** Project documentation and version tracking.
+| Technology | Application |
+|---|---|
+| HTML & CSS | Website structure, content, and styling |
+| GitHub | Source code storage, version tracking, and branch management |
+| Cloudflare Workers | Website hosting and deployment |
+| Cloudflare DNS | Custom domain configuration |
+| ChatGPT | AI-assisted code generation, revisions, and troubleshooting |
+| Notepad | Editing and saving website files |
+| GitHub Integration | Connecting source code changes to Cloudflare builds |
 
-## Current Development Workflow
+## Project Architecture
 
-1. Develop and revise website code with assistance from ChatGPT.
-2. Copy code into Notepad and save the website files to USB storage.
-3. Upload the updated files manually through the Cloudflare dashboard.
-4. Deploy changes to the Cloudflare Worker.
-5. Review the live website and make additional changes as needed.
+The website uses the following deployment workflow:
 
-## Deployment Management
+1. Website files are maintained in a GitHub repository.
+2. The repository is connected to Cloudflare Workers.
+3. The `main` branch is configured as the production branch.
+4. Cloudflare builds the project when changes are committed.
+5. Successful deployments make updated website content available through the hosting platform.
+6. The live website is reviewed to verify functionality.
 
-The website is deployed using Cloudflare Workers with a custom domain.
+A separate `development` branch is available for development work.
 
-Cloudflare maintains a history of manually deployed versions, allowing previous deployments to be identified.
+## Technical Challenges & Troubleshooting
 
-**Future Improvement:** Explore integrating GitHub into the development workflow to improve source-code version control and potentially automate deployments.
+### Cloudflare Build Configuration
 
-## Skills Being Developed
+**Challenge:** During the transition from manual deployments to GitHub-connected deployments, a Cloudflare build failed.
 
-- Web application troubleshooting
-- Cloud and DNS fundamentals
+**Investigation:** Reviewed GitHub build status, Cloudflare deployment logs, and Workers build settings.
+
+**Resolution:** Updated the project's `wrangler.jsonc` configuration and deployment settings. Subsequent builds completed successfully.
+
+**Skills demonstrated:**
+- Reading deployment logs
+- Investigating build failures
+- Working with JSON-based configuration
+- Troubleshooting cloud deployment workflows
+- Validating successful builds
+
+### Transition to GitHub Version Control
+
+**Challenge:** The original workflow involved generating code with ChatGPT, saving HTML files using Notepad, transferring files through USB storage, and manually uploading files to Cloudflare.
+
+**Improvement:** Organized the website files into a GitHub repository and connected the repository to Cloudflare.
+
+**Result:** Established a source-controlled workflow with GitHub-connected builds, reducing reliance on manual file uploads.
+
+## Testing & Validation
+
+Following deployment changes, I verify website functionality by reviewing:
+
+- Homepage accessibility
+- Website navigation
+- Images and styling
+- Internal page links
+- Successful Cloudflare build status
+- Live website behavior after updates
+
+## Skills Demonstrated
+
+- Technical troubleshooting and problem-solving
+- GitHub repository management
+- Cloud hosting fundamentals
+- Web deployment configuration
+- HTML and CSS fundamentals
+- Build-log investigation
 - Technical documentation
-- Problem-solving and testing
 - AI-assisted development workflows
-- Project organization
 
-## Next Steps
+## Future Improvements
 
-- Document the website's actual hosting and deployment configuration.
-- Record technical problems and their resolutions.
-- Add screenshots demonstrating website features.
-- Document testing and improvements.
-- Add source code where appropriate and safe to share.
-
-## Security & Privacy
-
-This repository is intended for public portfolio documentation. Credentials, API tokens, private configuration files, and other sensitive information will not be published.
+- Continue refining the GitHub development workflow
+- Document additional troubleshooting scenarios
+- Improve website performance and accessibility
+- Expand testing documentation
+- Add project screenshots and architecture diagrams
 
 ---
 
-**Note:** This is an independently managed learning and development project. AI-assisted tools are used in the development process, with technical implementation and troubleshooting documented as the project progresses.
+**Professional Development Note**
+
+This is an independently managed personal learning and development project. AI-assisted tools are used to help generate and revise code, while I manage website configuration, deployment workflows, testing, and troubleshooting.
+
+The project supports my continued professional development in IT support, application troubleshooting, cloud technologies, and technical operations.
